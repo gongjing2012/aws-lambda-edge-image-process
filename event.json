@@ -3,18 +3,18 @@
     {
       "cf": {
         "config": {
-          "distributionDomainName": "xxxxxxxxx.cloudfront.net",
-          "distributionId": "xxxxxxxxxxx",
+          "distributionDomainName": "d25vaqjnefpyxw.cloudfront.net",
+          "distributionId": "E2VTMJ8JTNYGBU",
           "eventType": "origin-response",
           "requestId": "FaxzdvQKODwOgXKKLs5w7KvcAdalkBqUJAvZWQd9GArijxxxxxxxx=="
         },
         "request": {
-          "clientIp": "111.111.111.111",
+          "clientIp": "127.0.0.1",
           "headers": {
             "host": [
               {
                 "key": "Host",
-                "value": "xxxxxxxxxxx.cloudfront.net"
+                "value": "d25vaqjnefpyxw.cloudfront.net"
               }
             ],
             "accept-language": [
@@ -38,13 +38,13 @@
             "user-agent": [
               {
                 "key": "User-Agent",
-                "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36"
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36"
               }
             ],
             "via": [
               {
                 "key": "Via",
-                "value": "2.0 11111111111111111111111.cloudfront.net (CloudFront)"
+                "value": "2.0 d25vaqjnefpyxw.cloudfront.net (CloudFront)"
               }
             ],
             "accept-encoding": [
@@ -101,12 +101,12 @@
             "s3": {
               "authMethod": "none",
               "customHeaders": {},
-              "domainName": "your-bucket-name.s3.amazonaws.com",
+              "domainName": "gj1-test-image.s3.us-east-1.amazonaws.com",
               "path": ""
             }
           },
           "querystring": "",
-          "uri": "/foam_test/image/198011463cfebbae6f39f5ff08b5d7a6.jpg@70p_370w_0e_1l_70q.webp"
+          "uri": "/image/198011463cfebbae6f39f5ff08b5d7a6.jpg@70p_370w_0e_1l_70q.webp"
         },
         "response": {
           "headers": {
@@ -125,7 +125,7 @@
             "date": [
               {
                 "key": "Date",
-                "value": "Mon, 24 Aug 2020 08:22:17 GMT"
+                "value": "Thu, 19 May 2022 01:26:13 GMT"
               }
             ],
             "server": [

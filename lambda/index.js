@@ -24,6 +24,7 @@ const getBucketNameFromCFRequest = (request) => {
     let domain;
     try {
         domain = request.origin.s3.domainName;
+        l('----------- domain ------------'+domain);
     } catch (e) {
         return false;
     }
@@ -37,12 +38,15 @@ const getBucketNameFromCFRequest = (request) => {
 const handleOriginResponse = async (request, response) => {
     // Parse request params
     let requestPolicy = QueryParser.parseUri(request['uri']);
+    l('----------- uri ------------'+request['uri']);
     // Fetch bucket name
     let bucketName = getBucketNameFromCFRequest(request);
+    l("----------- response['status'] ------------"+response['status']);
 
     if (response['status'] < 400 || response['status'] > 599) {
         return false;
     }
+    l("----------- bucketName ------------"+bucketName);
 
     if (bucketName === false) {
         return false;

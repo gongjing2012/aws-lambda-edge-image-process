@@ -33,6 +33,8 @@ const resize = (sharp, option, originImageMeta) => {
         } else if (option.e === 2) { // Force resize with width and height
             resizeOption.fit = 'fill'; // ignore the aspect ratio, and fill the image to input size
         }
+
+        console.log('-----------option.h-------------'+option.h)
         resizeOption.width = option.w || null;
         resizeOption.height = option.h || null;
     } else {
