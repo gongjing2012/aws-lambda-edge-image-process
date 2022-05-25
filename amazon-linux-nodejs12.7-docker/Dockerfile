@@ -12,4 +12,3 @@ RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.35.3/install.sh
 RUN source ~/.bashrc && nvm install 12.7
 
 WORKDIR /build
-
